@@ -34,6 +34,10 @@ workspace:
       path: templates/brief.md
     - source: workspace/templates/record.json
       path: templates/record.json
+    - source: workspace/reference/assignment-studio.md
+      path: reference/assignment-studio.md
+    - source: workspace/templates/rubric-check.md
+      path: templates/rubric-check.md
 packages: []
 mcpServers: {}
 cronJobs: []
