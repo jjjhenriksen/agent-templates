@@ -1,0 +1,15 @@
+{
+  "name": "resume-portfolio-copilot-template",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Evidence-backed role-specific resumes, portfolio narratives and positioning choices.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jjjhenriksen/agent-templates.git",
+    "directory": "templates/resume-portfolio-copilot"
+  },
+  "openclaw": {
+    "template": "CLAW.md"
+  }
+}
