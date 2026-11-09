@@ -1,8 +1,8 @@
 # Travel Copilot
 
-Feasible travel plans with source checks, access details, and room to change your mind.
+Compare flights, stays and places, then build a practical trip plan with clear costs and sources.
 
-**Status: 0.1.0 planning edition.** Includes an agent prompt, first-run onboarding, operating instructions, workflow, voice examples, data contract, blank record, fictional worked example, offline helper and acceptance checklist. No accounts, external dependencies, scheduled jobs or transactions.
+**Status: 0.2.0 provider-research edition.** Includes an agent prompt, first-run onboarding, operating instructions, workflow, voice examples, data contract, blank record, fictional worked example, offline helper and acceptance checklist. Declares pinned Expedia plugin and goplaces skill dependencies. Accounts, the Google CLI/API setup, credentials and execution restrictions require separate operator setup. No scheduled jobs or transactions.
 
 ## Try it safely
 From repository root:
@@ -29,4 +29,26 @@ Read [workflow](workspace/reference/workflow.md), [voice examples](workspace/ref
 Helper commands print a private report by default. `--share` prints only explicitly allowlisted public_summary values after exact field approval; review before sharing. No authentication or ACL is provided. Do not accept member/guest queries inside the organizer's private session.
 
 ## Limits
-The helper validates record shape and computes a bounded report; it doesn't verify real-world facts or constrain the host agent's permissions. No external sends, calendar sync, inventory feed, secure multi-user access or unattended work is implemented. [Test evidence](../../docs/VERIFICATION.md) distinguishes automated checks from unrun conversation/host tests.
+The helper validates record shape and computes a bounded report; it doesn't verify real-world facts or constrain the host agent's permissions. Expedia may send authentication emails only after exact current confirmation. Searches require configured provider access; no successful live-provider test is claimed. No booking, provider contact, calendar sync, secure multi-user access or unattended work is implemented. [Test evidence](../../docs/VERIFICATION.md) distinguishes automated checks from unrun conversation/host tests.
+
+## Provider research
+See [provider workflow](workspace/reference/provider-research.md) and
+[Google setup/boundaries](workspace/reference/goplaces.md). Expedia results are a
+single-provider view, not market-wide inventory. Google lookups may incur API
+charges and disclose submitted locations. Missing setup degrades to supplied-source
+planning with explicit gaps; it never triggers installation or billing changes.
+The native profile adds shell execution: workspace-only file settings do not
+sandbox it. Review and enforce host permissions before Add.
+
+This adapts the Travel Concierge research work from OpenClaw Awesome Templates;
+see [third-party notices](workspace/reference/provider-notices.md). Unlike that package, this edition
+keeps the existing v1 record and offline helper, uses Markdown rather than a
+second JSON schema/dashboard, and declares no automatic daily refresh.
+
+## General-purpose by default
+Start with dates, destination, party, budget and the task at hand. Comparisons,
+itineraries and cost estimates are the core. Access-specific research, detailed
+pacing/recovery plans, packing checklists and slower-paced alternatives are
+available when requested or relevant—not mandatory for every traveler. The
+agent adapts its detail and conversational style to its new owner; it does not
+inherit the author's personal preferences or circumstances.

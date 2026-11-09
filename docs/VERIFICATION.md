@@ -22,3 +22,15 @@ Acceptance checklists in each package identify these remaining gates. Upstream G
 - Schoolwork Copilot 0.1.0 passed OpenClaw 2026.11.1 validate, offline dev, and two byte-identical builds. Archive checked for symlinks, escaping paths and bounded personal/institution markers. Public repository attribution and copyright remain; no private school identity or records are bundled.
 - SHA256: `02898e273132b1571432103c0f51b5968c5b223f1c6fa7f3f187ae42efe87bfb`. Existing release artifacts/digests were not changed.
 - No Add, account connection, scheduler mutation, assignment submission or ClawHub publication. Conversational acceptance and receiving-host security remain untested.
+
+## Travel Copilot 0.2.0 provider-research revision — 2026-11-09
+- 76 offline Python tests passed (64 existing, 12 new). New checks pin dependency/profile declarations, reject version/tool/profile/job drift and cover workspace mapping, attribution and required safety/fallback instructions. These are source/contract checks, not model behavior or provider execution tests.
+- Repository hygiene and whitespace checks passed. Existing offline helper and v1 record behavior are unchanged.
+- OpenClaw 2026.11.1 `templates validate` passed. Two non-installing `templates build` runs produced byte-identical archives. Packaged notice, profile and all mapped workspace files were inspected; no account, job or agent was created.
+- `templates dev` returned a plan but is **blocked** on `package_install_unavailable` for the goplaces skill and Expedia extension because dependency preflight is unavailable in offline preview. The full `scripts/build_packages.py` gate therefore cannot be called passed for this revision. Build success does not establish dependency installation or receiving-host readiness.
+- No successful live-provider test is claimed. Prior Google probes were denied by Places permission and disabled Routes API; credentials and payloads are not included. Expedia authentication/search, Google search/details/directions, receiving-host execution restrictions and conversational acceptance still need authorized live checks.
+- No Add, installation, API/billing/configuration change, scheduled refresh, booking, provider contact or registry publication was performed.
+
+### PR revision: general-purpose defaults
+- Detailed access checks, pacing, recovery buffers and lower-capacity/skip-first variants are now conditional on the request or stated constraints, not mandatory for every traveler. Existing record fields remain compatible and may be empty.
+- Added a source-contract regression for general-purpose defaults and optional tailoring. No new personal facts, tools, dependencies or authority were introduced by this revision.

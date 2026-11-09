@@ -1,5 +1,7 @@
 # Preparation and disruption sheet (private)
 
+Optional checklist: use when requested or relevant; omit recovery/access detail that does not apply to this traveler.
+
 ## Packing/docs
 Item | why needed | carry-on/access requirement | owner | verified restriction/source | packed?
 --- | --- | --- | --- | --- | ---

@@ -1,8 +1,8 @@
 {
   "name": "travel-copilot-template",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "type": "module",
-  "description": "Feasible travel plans with source checks, access details, and room to change your mind.",
+  "description": "Compare flights, stays and places, then build a practical trip plan with clear costs and sources.",
   "license": "MIT",
   "repository": {
     "type": "git",

@@ -8,10 +8,10 @@ Four portable OpenClaw agents by Jacqueline Henriksen. Practical, human-sounding
 |---|---|---|
 | [Schoolwork Copilot](templates/schoolwork-copilot) | Rubrics, coursework planning, study and permitted research/drafting | A source-backed assignment packet with next steps and verification gaps |
 | [Celebration Coordinator](templates/celebration-coordinator) | Occasions, guests, gifts, meals, budgets and changing capacity | A realistic plan, smaller fallback and next three actions |
-| [Travel Copilot](templates/travel-copilot) | Comparing options, access checks, trip costs and disruption planning | A source-labelled trip packet with normal/lower-capacity variants |
+| [Travel Copilot](templates/travel-copilot) | Comparing flights, stays and places, trip costs and itinerary planning | A source-labelled comparison or trip plan tailored to the request |
 | [Good Company Coordinator](templates/good-company-coordinator) | Repeated policy questions, volunteer matching and draft follow-ups | A cited answer or reviewable coordination packet |
 
-**Release: 0.1.0, planning editions.** Complete package sources, onboarding, workflows, voice examples, blank records, fictional examples, offline reporting helpers, acceptance checklists and test automation. No accounts, paid services, hidden installs, preconfigured reminders or external transactions. They are not fully autonomous service integrations. Conversation-level quality and receiving-host security still need pilot evaluation.
+**Versions: Travel Copilot 0.2.0; other packages 0.1.0.** Complete package sources, onboarding, workflows, voice examples, blank records, fictional examples, offline reporting helpers, acceptance checklists and test automation. Travel Copilot now declares pinned Expedia and goplaces dependencies for operator-configured research; other packages remain dependency-free planning editions. No credentials, hidden account setup, preconfigured reminders or transactions. Google API usage can incur operator-authorized charges. They are not autonomous booking or service agents. Conversation-level quality and receiving-host security still need pilot evaluation.
 
 ## Start here
 ```sh
