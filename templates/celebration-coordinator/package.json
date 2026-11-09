@@ -1,0 +1,15 @@
+{
+  "name": "celebration-coordinator-template",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Less to keep in your head: celebrations, budgets, and realistic fallback plans.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jjjhenriksen/agent-templates.git",
+    "directory": "templates/celebration-coordinator"
+  },
+  "openclaw": {
+    "template": "CLAW.md"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "travel-copilot-template",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Feasible travel plans with source checks, access details, and room to change your mind.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jjjhenriksen/agent-templates.git",
+    "directory": "templates/travel-copilot"
+  },
+  "openclaw": {
+    "template": "CLAW.md"
+  }
+}

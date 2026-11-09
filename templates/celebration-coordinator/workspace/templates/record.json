@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "new-plan",
+  "title": "",
+  "timezone": "",
+  "public_summary": {},
+  "approved_public_fields": [],
+  "currency": "",
+  "budget": null,
+  "costs": [],
+  "tasks": [],
+  "occasion": {
+    "date": null,
+    "organizer_role": null,
+    "headcount_range": null
+  },
+  "priorities": [],
+  "capacity_mode": "unconfirmed",
+  "baseline_plan": [],
+  "minimum_viable_plan": [],
+  "menu": [],
+  "shopping": [],
+  "gifts_enabled": false,
+  "gifts": []
+}

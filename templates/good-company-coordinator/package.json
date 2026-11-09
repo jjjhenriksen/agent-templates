@@ -1,0 +1,15 @@
+{
+  "name": "good-company-coordinator-template",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Cited answers and manageable coordination for nonprofit and community organizers.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jjjhenriksen/agent-templates.git",
+    "directory": "templates/good-company-coordinator"
+  },
+  "openclaw": {
+    "template": "CLAW.md"
+  }
+}

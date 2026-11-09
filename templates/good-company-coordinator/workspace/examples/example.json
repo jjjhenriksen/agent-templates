@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "example-program",
+  "title": "Maple Community Hub (fictional)",
+  "timezone": "Europe/London",
+  "sources": [
+    {
+      "id": "guide-v1",
+      "title": "Fictional volunteer guide",
+      "section": "2",
+      "audience": "owner",
+      "status": "current",
+      "text": "Welcome-table volunteers must have the greeter role.",
+      "effective_from": "2030-01-01",
+      "review_by": "2030-12-31"
+    }
+  ],
+  "people": [
+    {
+      "id": "p1",
+      "opt_in": true,
+      "roles": [
+        "greeter"
+      ],
+      "skills": {
+        "welcome": 2
+      },
+      "availability": [
+        {
+          "start": "2030-06-10T09:00:00+01:00",
+          "end": "2030-06-10T12:00:00+01:00"
+        }
+      ],
+      "max_open_tasks": 2,
+      "open_tasks": 0,
+      "avoid_categories": []
+    }
+  ],
+  "tasks": [
+    {
+      "id": "welcome",
+      "start": "2030-06-10T10:00:00+01:00",
+      "end": "2030-06-10T11:00:00+01:00",
+      "category": "welcome",
+      "required_roles": [
+        "greeter"
+      ],
+      "required_skills": {
+        "welcome": 1
+      },
+      "status": "proposed"
+    }
+  ],
+  "public_summary": {
+    "title": "Maple Community Hub",
+    "event": "Welcome morning",
+    "accepted_assignments": []
+  },
+  "approved_public_fields": [
+    "title",
+    "event"
+  ],
+  "private_notes": {
+    "roster_address": "coordinator@example.invalid"
+  }
+}
