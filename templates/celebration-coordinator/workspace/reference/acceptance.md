@@ -17,3 +17,6 @@ Automated structural/helper tests live in repository tests and are recorded in t
 - [ ] Headcount ranges remain ranges; helpers only become owners after acceptance.
 - [ ] Allergy and cross-contact unknowns remain unresolved, never a food-safety guarantee.
 - [ ] Date changes across DST preserve original commitments; later optional reminders reconcile IDs and cutoff.
+
+## Expanded service pilot
+Run the fictional case and pilot acceptance scenarios in [event-studio](event-studio.md). Preserve actual model output and host permissions; these scenarios are not executed behavioral tests.

@@ -7,3 +7,5 @@
 5. Forecast spending using reference/data-contract.md. Resolve duplicate costs and incompatible units before consolidating a shopping list. Unknown costs stay visible.
 6. On change, show deltas, revised cost and dropped options. Don't silently change purchases, contacts, or commitments. Print a private status brief; only approved public_summary fields enter a share draft.
 7. Close with receipt reconciliation, leftover/cleanup ownership and retention review. No reminders exist unless separately authorized, created and verified.
+
+For request-sized services, practical worked cases and change handling, follow [event-studio.md](event-studio.md). Use the appropriate service rather than forcing every step for every question.
