@@ -1,0 +1,4 @@
+# Offline deadline helper
+Run `python3 scripts/plan.py examples/example.json` in the added agent workspace. Python 3.11+ standard library only; no writes, network, clock reads, scheduling, LMS access or submission.
+
+Input: schema_version exactly integer 1; assignments list; each record has a unique nonempty string id, status (not-started, draft, submitted, graded), and due_at (null or an offset-aware ISO timestamp). Use opaque aliases, not student names or sensitive titles. Unknown deadlines are reported separately, never treated as safely late. Submitted/graded work is excluded; this is not proof of acceptance or completion. Results are deadline order only, not effort-aware scheduling or overdue detection. Offsets are compared as UTC instants. Private notes and extra fields are never projected, but the input must still be kept private. Invalid input produces a generic error without echoing its contents.

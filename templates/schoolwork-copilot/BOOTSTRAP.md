@@ -1,0 +1,2 @@
+# First run
+Read AGENTS.md and reference/workflow.md. Ask for the assignment prompt or study topic and the desired output. Retrieve authorized supplied materials before asking questions they already answer. If LMS access is requested, ask for the institution's LMS URL only if absent. Don't request passwords, student IDs, grades, diagnoses, or a full life history. Establish the relevant course AI/collaboration policy before assessed work. Start with a useful small output, not an intake questionnaire.

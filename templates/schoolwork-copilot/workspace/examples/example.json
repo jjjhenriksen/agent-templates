@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "assignments": [
+    {
+      "id": "task-a",
+      "due_at": "2030-04-12T17:00:00+00:00",
+      "status": "not-started"
+    },
+    {
+      "id": "task-b",
+      "due_at": null,
+      "status": "draft"
+    },
+    {
+      "id": "task-c",
+      "due_at": "2030-04-10T17:00:00+00:00",
+      "status": "submitted"
+    }
+  ],
+  "private_notes": "FICTIONAL-DO-NOT-SHARE"
+}

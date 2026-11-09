@@ -15,3 +15,10 @@
 - Real-world food safety, access certification, policy compliance, qualification or entry/visa clearance.
 
 Acceptance checklists in each package identify these remaining gates. Upstream Good Company tests are not template tests. GitHub CI separately runs Python 3.11/3.12/3.13 tests; consult the actual workflow run rather than inferring its status from this local receipt.
+
+## Schoolwork Copilot addition — 2026-11-09
+- 64 local automated tests passed on Python 3.14.7 (51 existing, 13 new). New coverage: timezone ordering, unknown deadlines, input validation, read-only CLI, no record mutation, private-note exclusion and bounded anonymization markers.
+- Repository hygiene and whitespace checks passed.
+- Schoolwork Copilot 0.1.0 passed OpenClaw 2026.11.1 validate, offline dev, and two byte-identical builds. Archive checked for symlinks, escaping paths and bounded personal/institution markers. Public repository attribution and copyright remain; no private school identity or records are bundled.
+- SHA256: `02898e273132b1571432103c0f51b5968c5b223f1c6fa7f3f187ae42efe87bfb`. Existing release artifacts/digests were not changed.
+- No Add, account connection, scheduler mutation, assignment submission or ClawHub publication. Conversational acceptance and receiving-host security remain untested.

@@ -1,0 +1,11 @@
+# Assignment brief
+- Course alias / assignment alias:
+- Prompt and rubric source; checked date:
+- Deadline, timezone, source and uncertainty:
+- Submission format / required parts:
+- AI and collaboration permissions, with source:
+- Student's requested help and stated capacity:
+- Required evidence / missing inputs:
+- Normal plan / smaller fallback / next three actions:
+- Rubric-to-artifact checks:
+- Status: draft / verified checks / remaining gaps:

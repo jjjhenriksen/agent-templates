@@ -2,10 +2,11 @@
 
 **Less to keep in your head. More room for the thing you actually want to do.**
 
-Three portable OpenClaw agents by Jacqueline Henriksen. Practical, human-sounding planning partners—not bots that hand you a longer checklist and call it help.
+Four portable OpenClaw agents by Jacqueline Henriksen. Practical, human-sounding planning partners—not bots that hand you a longer checklist and call it help.
 
 | Template | What it takes off your plate | First useful output |
 |---|---|---|
+| [Schoolwork Copilot](templates/schoolwork-copilot) | Rubrics, coursework planning, study and permitted research/drafting | A source-backed assignment packet with next steps and verification gaps |
 | [Celebration Coordinator](templates/celebration-coordinator) | Occasions, guests, gifts, meals, budgets and changing capacity | A realistic plan, smaller fallback and next three actions |
 | [Travel Copilot](templates/travel-copilot) | Comparing options, access checks, trip costs and disruption planning | A source-labelled trip packet with normal/lower-capacity variants |
 | [Good Company Coordinator](templates/good-company-coordinator) | Repeated policy questions, volunteer matching and draft follow-ups | A cited answer or reviewable coordination packet |
