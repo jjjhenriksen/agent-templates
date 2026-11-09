@@ -43,9 +43,10 @@ See reference/goplaces.md for minimized query consent, quotas and setup.
    The offline helper checks only its existing v1 record, not provider payloads,
    prices, URLs, source authority or live availability. Do not call its output
    a schema-validated provider shortlist. No second JSON format is introduced.
-5. Return the complete Markdown comparison and itinerary. A widget is not
-   required. Keep the normal plan, lower-capacity alternative, skip-first choices,
-   whole-party cost gaps and unresolved hard constraints visible. The traveler
+5. Return the comparison or itinerary requested; omit irrelevant template
+   sections. A widget is not required. Show material cost gaps and unresolved
+   hard constraints. Include slower-paced, access-specific or skip-first
+   alternatives only when requested or relevant to stated needs. The traveler
    opens the actual provider links and performs every transaction personally.
 
 ## Failure behavior

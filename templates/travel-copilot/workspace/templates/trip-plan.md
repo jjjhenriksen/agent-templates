@@ -3,8 +3,10 @@
 ## Constraints and current choice
 Trip dates and local timezones; party; currency; hard constraints; preferences; unknowns. Compare no more than three feasible options. No reservation exists without its own evidence.
 
+Use only sections relevant to the request. Alternatives, detailed buffers and access checks are optional and should reflect the traveler’s stated needs, not assumed personal circumstances.
+
 ## Daily plan
-Date / timezone | normal plan | provider route estimate and mode | extra transfer / queue / break buffers | lower-capacity alternative | skip first | source references / unresolved access
+Date / timezone | planned activity | provider route estimate and mode | extra transfer / queue / break buffers | optional alternative | optional / skip if needed | source references / unresolved access
 --- | --- | --- | --- | --- | --- | ---
 
 ## Whole-party cost gaps

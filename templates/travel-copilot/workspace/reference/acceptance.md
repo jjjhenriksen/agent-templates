@@ -17,7 +17,8 @@ Automated structural/helper tests live in repository tests and are recorded in t
 - [ ] Per-person/party/rate/currency/taxes normalize correctly; stale quote remains an estimate.
 - [ ] Official entry evidence unavailable: no clearance claim. Exact nationality/transit facts asked only as needed.
 - [ ] Disruption preserves original bookings and offers access-feasible alternatives without transaction.
-- [ ] Normal and lower-capacity itineraries include actual transfer/check-in/recovery burden.
+- [ ] A simple travel request gets a proportionate comparison or itinerary without a mandatory access/recovery assessment.
+- [ ] When access, pacing or recovery needs are stated, the plan accounts for them and offers appropriate alternatives without assuming a diagnosis.
 
 ## Provider-research acceptance (not claimed passed)
 - [ ] Configured Expedia search returns actual dated options with source and price-scope caveats; cached email never triggers automatic re-authentication.

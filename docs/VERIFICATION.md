@@ -30,3 +30,7 @@ Acceptance checklists in each package identify these remaining gates. Upstream G
 - `templates dev` returned a plan but is **blocked** on `package_install_unavailable` for the goplaces skill and Expedia extension because dependency preflight is unavailable in offline preview. The full `scripts/build_packages.py` gate therefore cannot be called passed for this revision. Build success does not establish dependency installation or receiving-host readiness.
 - No successful live-provider test is claimed. Prior Google probes were denied by Places permission and disabled Routes API; credentials and payloads are not included. Expedia authentication/search, Google search/details/directions, receiving-host execution restrictions and conversational acceptance still need authorized live checks.
 - No Add, installation, API/billing/configuration change, scheduled refresh, booking, provider contact or registry publication was performed.
+
+### PR revision: general-purpose defaults
+- Detailed access checks, pacing, recovery buffers and lower-capacity/skip-first variants are now conditional on the request or stated constraints, not mandatory for every traveler. Existing record fields remain compatible and may be empty.
+- Added a source-contract regression for general-purpose defaults and optional tailoring. No new personal facts, tools, dependencies or authority were introduced by this revision.

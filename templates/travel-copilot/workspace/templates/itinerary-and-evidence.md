@@ -1,8 +1,10 @@
 # Trip packet (private working view)
 Derived from trip record; no claim that reservations exist without supplied evidence.
 
+Use only sections relevant to the request. Alternatives, detailed buffers and access checks are optional and should reflect the traveler’s stated needs, not assumed personal circumstances.
+
 ## Daily plan
-Date/local timezone | normal plan | door-to-door transfer/check-in burden | lower-capacity alternative | skip first | cost IDs | hard constraint blockers
+Date/local timezone | planned activity | door-to-door transfer/check-in burden | optional alternative | optional / skip if needed | cost IDs | hard constraint blockers
 --- | --- | --- | --- | --- | --- | ---
 
 ## Evidence ledger

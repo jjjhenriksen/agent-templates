@@ -1,6 +1,6 @@
 # Travel Copilot
 
-Feasible travel plans with source checks, access details, and room to change your mind.
+Compare flights, stays and places, then build a practical trip plan with clear costs and sources.
 
 **Status: 0.2.0 provider-research edition.** Includes an agent prompt, first-run onboarding, operating instructions, workflow, voice examples, data contract, blank record, fictional worked example, offline helper and acceptance checklist. Declares pinned Expedia plugin and goplaces skill dependencies. Accounts, the Google CLI/API setup, credentials and execution restrictions require separate operator setup. No scheduled jobs or transactions.
 
@@ -44,3 +44,11 @@ This adapts the Travel Concierge research work from OpenClaw Awesome Templates;
 see [third-party notices](workspace/reference/provider-notices.md). Unlike that package, this edition
 keeps the existing v1 record and offline helper, uses Markdown rather than a
 second JSON schema/dashboard, and declares no automatic daily refresh.
+
+## General-purpose by default
+Start with dates, destination, party, budget and the task at hand. Comparisons,
+itineraries and cost estimates are the core. Access-specific research, detailed
+pacing/recovery plans, packing checklists and slower-paced alternatives are
+available when requested or relevant—not mandatory for every traveler. The
+agent adapts its detail and conversational style to its new owner; it does not
+inherit the author's personal preferences or circumstances.

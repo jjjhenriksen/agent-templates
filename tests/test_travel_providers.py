@@ -79,6 +79,18 @@ class TravelProviderTests(unittest.TestCase):
                        'billing and quotas', 'literal argument', 'No automatic retries'):
             self.assertIn(phrase, google)
 
+    def test_general_defaults_and_optional_tailoring(self):
+        manifest = (PACKAGE / 'CLAW.md').read_text()
+        self.assertIn('Compare flights, stays and places', manifest)
+        self.assertIn('only when the traveler asks or supplied constraints make them relevant', manifest)
+        self.assertNotIn('Give a normal plan, lower-capacity variant and skip-first list.', manifest)
+        agreement = (PACKAGE / 'workspace/AGENTS.md').read_text()
+        self.assertIn('For a simple request, give a simple answer', agreement)
+        workflow = (PACKAGE / 'workspace/reference/workflow.md').read_text()
+        self.assertIn('Do not assume those needs for every traveler', workflow)
+        contract = (PACKAGE / 'workspace/reference/data-contract.md').read_text()
+        self.assertIn('not intake requirements', contract)
+
 
 if __name__ == '__main__':
     unittest.main()

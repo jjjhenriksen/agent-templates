@@ -2,7 +2,7 @@
 
 ## Travel Copilot 0.2.0 — 2026-11-09
 - Bounded Expedia and Google Places/Routes research declarations, setup/privacy guidance and dated provider shortlist.
-- Door-to-door Markdown trip plan with separate route buffers, whole-party cost gaps and lower-capacity/skip-first alternatives.
+- General-purpose Markdown comparisons and trip plans, with access, pacing and alternative-plan detail tailored to stated needs rather than mandatory personal defaults.
 - Keeps v1 records and offline helper, traveler-owned transactions, supplied-source fallback and no scheduled jobs.
 - No live-provider success, installed agent or registry publication implied; existing release archives remain unchanged.
 
