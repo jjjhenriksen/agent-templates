@@ -4,7 +4,8 @@
 - **51 automated tests passed** on Python 3.14.7: decimal budget math, double-count prevention, unknown costs, input rejection, dependency cycles, public projection, opt-in/roles/skills/availability/workload/overlap, timezone-aware intervals, read-only CLI and repository hygiene.
 - Repository scan passed: JSON/Python syntax, relative Markdown links, explicit workspace-asset coverage, required package files and private-path/token-pattern checks. This is bounded hygiene, not an exhaustive security audit.
 - **3/3 packages** passed OpenClaw 2026.11.1 `templates validate` and offline `templates dev`. No Add or config mutation.
-- **3/3 packages** built twice with identical bytes/digests. See SHA256SUMS-0.1.0.txt. Artifacts contain 17/18/17 files respectively, only mapped generic files, metadata, bootstrap and license. No symlinks, escaping paths, bytecode or detected private-path/token markers.
+- **3/3 packages** built twice with identical bytes/digests. See SHA256SUMS-0.1.0.txt. Artifacts contain 20/21/20 files respectively, only mapped generic files, metadata, bootstrap and license. No symlinks, escaping paths, bytecode or detected private-path/token markers.
+- **3/3 final archives** extracted into isolated temporary directories; OpenClaw inspection plus private/share example helper commands passed from each extracted package. No source-tree imports required.
 - Voice instructions and fictional conversation examples reviewed for distinct natural tone, minimal questioning, no sales copy or fabricated personal experience. This is source review, not a behavioral pass rate.
 
 ## Required receiving-host/pilot checks not claimed
