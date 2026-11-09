@@ -7,3 +7,5 @@
 5. Produce proposed matches with reasons and remaining gaps. A proposal isn't a commitment. Draft individual notices using approved recipient facts; do not send. An owner or volunteer's verified acceptance must be recorded separately.
 6. Track declined/accepted/completed with explicit provenance. Do not infer completion from a delivered reminder. If asked for operational delivery, explain the separate upstream engine/plugin integration and its receipts/consent requirements; do not install or schedule it automatically.
 7. Summarize exceptions and next decisions, staying quiet on unchanged background status (this edition does not run in the background). Offer an approved public summary, not a private roster dump. Record retention choices at close.
+
+For request-sized services, practical worked cases and change handling, follow [coordination-desk.md](coordination-desk.md). Use the appropriate service rather than forcing every step for every question.
