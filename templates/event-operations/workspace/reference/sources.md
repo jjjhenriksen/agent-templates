@@ -1,0 +1,2 @@
+# Provenance
+Original workflows, examples and helper implementation for this repository. Conceptual reference inspected: https://github.com/openclaw/awesome-templates/tree/main/templates/event-operations-director (MIT), specifically the separation of run of show, readiness, decisions and handoff. No source assets copied from that package. Package structure follows this repository's existing MIT packages. All people and events below are fictional; no live event verification performed.
