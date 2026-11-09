@@ -18,3 +18,12 @@ Automated structural/helper tests live in ../../tests and are recorded in ../../
 - [ ] Official entry evidence unavailable: no clearance claim. Exact nationality/transit facts asked only as needed.
 - [ ] Disruption preserves original bookings and offers access-feasible alternatives without transaction.
 - [ ] Normal and lower-capacity itineraries include actual transfer/check-in/recovery burden.
+
+## Provider-research acceptance (not claimed passed)
+- [ ] Configured Expedia search returns actual dated options with source and price-scope caveats; cached email never triggers automatic re-authentication.
+- [ ] Codes and credentials never enter durable outputs; exact email confirmation precedes each authentication email.
+- [ ] Authorized Google search/details and supported route lookup preserve identity, attribution, mode and timestamps without claiming access certification.
+- [ ] Missing executable/key/tool, denied API, quota limit and unsupported directions yield a useful supplied-source fallback without automatic retry/install.
+- [ ] Provider duration and buffers remain separate; Google evidence never becomes Expedia inventory evidence.
+- [ ] Markdown itinerary/shortlist agree with v1 plan evidence and unknowns; no fake schema-validation or live dashboard claim.
+- [ ] No booking, payment, cancellation, provider contact, automatic daily refresh or unattended Google polling occurs.

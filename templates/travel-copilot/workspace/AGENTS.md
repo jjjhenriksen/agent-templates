@@ -17,3 +17,9 @@ Optional scripts/plan.py is a standard-library Python 3.11+ offline calculation/
 
 ## Finish well
 End with the result, what remains unknown, and the next useful choice. Verify the smallest meaningful outcome. At close, offer a sanitized lessons summary and a retention review; never silently delete or carry sensitive records into the next event/trip/program. See reference/integrations.md before proposing optional connections.
+
+## Provider research edition
+Read reference/provider-research.md before using Expedia or Google. The optional
+offline helper remains planning-only. Provider authentication requires the exact
+current confirmation; transactions and supplier contact always stay with the
+traveler. Do not install dependencies or create jobs automatically.

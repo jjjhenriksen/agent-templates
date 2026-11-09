@@ -7,6 +7,50 @@ import re
 
 ROOT = Path(__file__).resolve().parents[1]
 
+TRAVEL_PACKAGES = '\n'.join((
+    'packages:', '  - kind: skill', '    source: clawhub',
+    '    ref: "@steipete/goplaces"', '    version: 1.0.0',
+))
+TRAVEL_PROFILE = """schemaVersion: 1
+agent:
+  tools:
+    profile: minimal
+    alsoAllow:
+      - read
+      - write
+      - edit
+      - search_stays
+      - search_flights
+      - eg_travel_signup
+      - eg_travel_verify
+      - exec
+    fs:
+      workspaceOnly: true
+extensions:
+  - id: expedia-openclaw
+    kind: plugin
+    format: openclaw
+    source: clawhub
+    ref: "@expediagroup/expedia-openclaw"
+    version: 1.0.4
+"""
+
+def check_capabilities(package):
+    """Pin reviewed capability surfaces; reject accidental widening."""
+    manifest = (package / 'CLAW.md').read_text()
+    expected = TRAVEL_PACKAGES if package.name == 'travel-copilot' else 'packages: []'
+    blocks = re.findall(r'^packages:[^\n]*(?:\n[ \t]+[^\n]*)*', manifest, re.M)
+    errors = []
+    if blocks != [expected] or not all(manifest.count(x) == 1 for x in ('mcpServers: {}', 'cronJobs: []')) or re.search(r'^automations:', manifest, re.M):
+        errors.append(package.name + ': unexpected dependencies/jobs')
+    profiles = sorted(p.relative_to(package).as_posix() for p in (package / 'profiles').rglob('*') if p.is_file())
+    if package.name == 'travel-copilot':
+        if profiles != ['profiles/openclaw.yml'] or (package / 'profiles/openclaw.yml').read_text() != TRAVEL_PROFILE:
+            errors.append(package.name + ': unexpected provider profile')
+    elif profiles:
+        errors.append(package.name + ': unexpected provider profile')
+    return errors
+
 def check(root=ROOT):
     errors = []
     for package in sorted((root / 'templates').iterdir()):
@@ -14,12 +58,11 @@ def check(root=ROOT):
         manifest = (package / 'CLAW.md').read_text()
         if meta.get('scripts') or meta['openclaw'] != {'template': 'CLAW.md'}:
             errors.append(str(package) + ': unsafe metadata')
-        sources = re.findall(r'^\s+(?:- )?source: (\S+)$', manifest, re.M)
+        sources = re.findall(r'^\s+(?:- )?source: (workspace/\S+)$', manifest, re.M)
         actual = {p.relative_to(package).as_posix() for p in (package / 'workspace').rglob('*') if p.is_file() and '__pycache__' not in p.parts}
         if set(sources) != actual or len(sources) != len(set(sources)):
             errors.append(package.name + ': asset coverage mismatch')
-        if not all(x in manifest for x in ('packages: []', 'mcpServers: {}', 'cronJobs: []')):
-            errors.append(package.name + ': unexpected dependencies/jobs')
+        errors.extend(check_capabilities(package))
         for required in ('BOOTSTRAP.md', 'LICENSE', 'README.md', 'ACCEPTANCE.md', 'SOURCES.md'):
             if not (package / required).is_file():
                 errors.append(package.name + ': missing ' + required)
