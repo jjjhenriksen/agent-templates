@@ -12,3 +12,8 @@
 
 ## Expanded service pilot
 Run the fictional case and pilot acceptance scenarios in [assignment-studio](assignment-studio.md). Preserve actual model output and host permissions; these scenarios are not executed behavioral tests.
+
+## Automation pilot (not executed host tests)
+- [ ] Authorized local exports refresh; missing course and stale observation remain visible.
+- [ ] Host schedules at chosen timezone/time, serializes checkpoint writes and reconciles uncertain delivery without blind retry.
+- [ ] Revocation disables same job; no submission or instructor messages; live LMS acquisition tested separately.

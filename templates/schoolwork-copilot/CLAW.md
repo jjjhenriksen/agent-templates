@@ -38,6 +38,10 @@ workspace:
       path: reference/assignment-studio.md
     - source: workspace/templates/rubric-check.md
       path: templates/rubric-check.md
+    - source: workspace/scripts/refresh.py
+      path: scripts/refresh.py
+    - source: workspace/reference/automation.md
+      path: reference/automation.md
 packages: []
 mcpServers: {}
 cronJobs: []

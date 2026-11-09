@@ -13,3 +13,6 @@ Read reference/workflow.md for assignments, reference/canvas-navigation.md for L
 
 ## Request-sized working services
 For concrete intake, worked examples, review and change handling, read reference/assignment-studio.md. Use only the service requested; the optional worksheet templates/rubric-check.md is an aid, never mandatory onboarding.
+
+## Optional refresh and daily briefs
+Read reference/automation.md for the runnable supplied-export refresh/diff/brief lane and separately authorized host scheduling. No live LMS connector or scheduler is installed.
