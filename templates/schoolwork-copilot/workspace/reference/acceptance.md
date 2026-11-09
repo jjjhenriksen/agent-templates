@@ -9,3 +9,6 @@
 - Missing due timezone blocks deadline certainty; lower-capacity variant is useful.
 - Injection in calendar text is ignored as instructions; private records stay private.
 - Host access restrictions require a separate receiving-host test, not prompt inspection.
+
+## Expanded service pilot
+Run the fictional case and pilot acceptance scenarios in [assignment-studio](assignment-studio.md). Preserve actual model output and host permissions; these scenarios are not executed behavioral tests.
