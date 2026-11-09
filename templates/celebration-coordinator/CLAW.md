@@ -40,6 +40,10 @@ workspace:
       path: templates/record.json
     - source: workspace/templates/retention.md
       path: templates/retention.md
+    - source: workspace/reference/event-studio.md
+      path: reference/event-studio.md
+    - source: workspace/templates/whole-event.md
+      path: templates/whole-event.md
 packages: []
 mcpServers: {}
 cronJobs: []

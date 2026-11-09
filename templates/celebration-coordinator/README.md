@@ -2,7 +2,7 @@
 
 Less to keep in your head: celebrations, budgets, and realistic fallback plans.
 
-**Status: 0.1.0 planning edition.** Includes an agent prompt, first-run onboarding, operating instructions, workflow, voice examples, data contract, blank record, fictional worked example, offline helper and acceptance checklist. No accounts, external dependencies, scheduled jobs or transactions.
+**Status: 0.2.0 planning edition.** Includes an agent prompt, first-run onboarding, operating instructions, workflow, voice examples, data contract, blank record, fictional worked example, offline helper and acceptance checklist. No accounts, external dependencies, scheduled jobs or transactions.
 
 ## Try it safely
 From repository root:
@@ -30,3 +30,6 @@ Helper commands print a private report by default. `--share` prints only explici
 
 ## Limits
 The helper validates record shape and computes a bounded report; it doesn't verify real-world facts or constrain the host agent's permissions. No external sends, calendar sync, inventory feed, secure multi-user access or unattended work is implemented. [Test evidence](../../docs/VERIFICATION.md) distinguishes automated checks from unrun conversation/host tests.
+
+## Expanded working services
+See the [service playbook](workspace/reference/event-studio.md) and [optional worksheet](workspace/templates/whole-event.md). Includes a fictional worked exchange and pilot acceptance cases. These are authored procedures, not evidence of a model/host pilot.
