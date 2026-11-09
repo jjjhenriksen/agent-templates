@@ -1,0 +1,2 @@
+# Sources and authorship
+Newly authored portable workflows and fictional examples. No personal records or private voice corpus are bundled. Packaging follows existing repository conventions. Public packaging references: https://docs.openclaw.ai/cli/templates.md and https://docs.openclaw.ai/clawhub/templates.md. These references do not establish professional efficacy, host security or behavioral test results.
