@@ -19,7 +19,7 @@ openclaw templates build ./templates/celebration-coordinator --out /tmp/celebrat
 openclaw templates build ./templates/celebration-coordinator --out /tmp/celebration-review-b.tgz --json
 ```
 
-- Full template-repo suite: 129 tests passed (78 previous, 48 bundled-helper tests, 3 bundle-lock/mapping checks).
+- Full template-repo suite: 137 tests passed (78 previous, 48 bundled-helper tests, 3 bundle-lock/mapping checks, 8 registry-release projection tests).
 - Repository hygiene, all mapped assets, local links and Python/JSON syntax passed.
 - OpenClaw 2026.11.1 validate and offline dev passed; mutationAllowed false, zero blockers. No live Add executed.
 - Two builds byte-identical; SHA-256: 33189c5d4d67a40d6eb8b98d29dbaa0239d4c546d866e2cae5ead82605d86ffa.
@@ -30,3 +30,5 @@ openclaw templates build ./templates/celebration-coordinator --out /tmp/celebrat
 No authenticated Google Sheets edit/share, provider browser workflow, live scheduler/send, host isolation, installed skill discovery, recipe/cross-contact certification or full model-behavior pilot. A Sheet cannot guarantee exclusive claims; partial snapshots cannot prove vacancies/cancellations. SignUpGenius automation remains conditional on provider permission. No new account, checkout, plugin install, registry upload, ClawHub scan or publication. Review before merging/publishing.
 
 Historical 0.2.0 verification remains unchanged for that release. This report is not evidence that the optional theme plugin's managed installation is working.
+
+Registry-release projection is prepared and offline-tested. Real registry pins, dependency preflight and registry-backed Add are blocked on owner-approved skill publication; no fictional refs were added to the live CLAW manifest.

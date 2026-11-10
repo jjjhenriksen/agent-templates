@@ -42,3 +42,6 @@ Authoritative skill source: [agent-skills](https://github.com/jjjhenriksen/agent
 Christmas themes may be offered with the template as a separate appearance plugin; there is no theme-to-workflow coupling. This skills update does not install/publish that plugin or claim its unresolved managed-installation check passed.
 
 The existing event record/helper and new skill-specific helpers have separate contracts; see routing before mapping data. No secure guest portal, authenticated provider workflow, unattended browser signup or exactly-once reminder service is claimed.
+
+## Registry-backed release path
+The intended ClawHub template release installs these skills from the owner's actual ClawHub releases, with exact versions and no duplicate bundled copies. Until skill publication is approved, this review package stays runnable offline. [Release projection and gates](../../docs/CELEBRATION-REGISTRY-RELEASE.md) documents the offline helper and what remains blocked on real publication receipts.
