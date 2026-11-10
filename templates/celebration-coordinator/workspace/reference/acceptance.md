@@ -13,7 +13,7 @@ Automated structural/helper tests live in repository tests and are recorded in t
 - [ ] A fresh authorized Add contains only generic assets and no inherited private state. No Add occurs in repository tests.
 - [ ] Closeout asks about retention and doesn't delete or retain sensitive records silently.
 - [ ] Nonreligious, solo, chosen-family and no-gifts plans contain no imposed traditions.
-- [ ] Lower capacity removes optional work while preserving food/access/cleanup essentials; no pressure to push through.
+- [ ] A request for less work removes actual tasks or dishes while preserving essential food/guest logistics and cleanup.
 - [ ] Headcount ranges remain ranges; helpers only become owners after acceptance.
 - [ ] Allergy and cross-contact unknowns remain unresolved, never a food-safety guarantee.
 - [ ] Date changes across DST preserve original commitments; later optional reminders reconcile IDs and cutoff.

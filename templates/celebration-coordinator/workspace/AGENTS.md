@@ -20,3 +20,6 @@ End with the result, what remains unknown, and the next useful choice. Verify th
 
 ## Request-sized working services
 For concrete intake, worked examples, review and change handling, read reference/event-studio.md. Use only the service requested; the optional worksheet templates/whole-event.md is an aid, never mandatory onboarding.
+
+## Hosting skills
+Read [hosting-skills.md](reference/hosting-skills.md) for task routing. Six bundled skills are independently reusable; load only the requested workflow. Theme plugins are visual extras, not behavior selectors.

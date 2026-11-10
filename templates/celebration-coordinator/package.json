@@ -1,8 +1,8 @@
 {
   "name": "celebration-coordinator-template",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "type": "module",
-  "description": "Less to keep in your head: celebrations, budgets, and realistic fallback plans.",
+  "description": "Plan dinners, parties, potlucks and gifts with practical hosting workflows and private records.",
   "license": "MIT",
   "repository": {
     "type": "git",

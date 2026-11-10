@@ -8,7 +8,7 @@ Category | Cost ID | Paid | Total committed including paid | Uncommitted estimat
 --- | --- | --- | --- | --- | ---
 Food, supplies, venue/rentals, transport, tax/delivery/tips, access, optional gifts, cleanup, chosen contingency: include only applicable categories; unknown is not zero.
 
-Plan | Menu/format | Shopping + active prep | Access/food checks | Accepted help | Cleanup/returns/recovery | Known forecast + unknowns
+Plan | Menu/format | Shopping + active prep | Access/food checks | Accepted help | Cleanup/returns | Known forecast + unknowns
 --- | --- | --- | --- | --- | --- | ---
 Baseline | | | | | |
 Smaller fallback | | | | | |
