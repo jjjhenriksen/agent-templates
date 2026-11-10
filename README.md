@@ -2,7 +2,7 @@
 
 **Less to keep in your head. More room for the thing you actually want to do.**
 
-Four portable OpenClaw agents by Jacqueline Henriksen. Practical, human-sounding planning partners—not bots that hand you a longer checklist and call it help.
+Five portable OpenClaw agents by Jacqueline Henriksen. Practical, human-sounding planning partners—not bots that hand you a longer checklist and call it help.
 
 | Template | What it takes off your plate | First useful output |
 |---|---|---|
@@ -52,3 +52,7 @@ See the individual voice guides for full fictional exchanges.
 [Research findings](docs/FINDINGS.md) · [architecture](docs/ARCHITECTURE.md) · [deployment](docs/DEPLOYMENT.md) · [privacy/security](SECURITY.md) · [verification](docs/VERIFICATION.md) · [contributing](CONTRIBUTING.md)
 
 Keep actual guest lists, reservations, member records and contacts out of this repository. “Local-first” storage does not mean local inference, and prompt instructions aren't access controls. GitHub hosting is not ClawHub registry publication; neither installs an agent for you.
+
+## Current registry releases
+
+[Celebration Coordinator 0.3.2](releases/celebration-coordinator) migrates the manifest and declares Christmas Themes plus Instacart MCP. [Everyday Meal Planner](templates/meal-planner) plans ordinary weeks, pantry-first shopping, prep and leftovers, with optional Instacart MCP. Neither source connects an account or orders groceries. See [current release validation](docs/MEAL-THEMES-VERIFICATION.md). Older bundled review editions and their historical tests are retained, not silently treated as current registry artifacts.

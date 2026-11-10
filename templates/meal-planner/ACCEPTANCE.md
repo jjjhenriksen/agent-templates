@@ -1,0 +1,11 @@
+# Acceptance scenarios (manual unless test receipt says otherwise)
+- Start with only dinners for two and three pantry items; draft three days with labelled assumptions.
+- Change servings from two to four: regenerate ingredients, shopping and leftover portions.
+- Unknown recipe quantity remains unquantified, not zero; pantry reserved elsewhere isn't reused.
+- Salted and unsalted products and grams/cups remain distinct.
+- A no-cook night consumes an explicitly assigned leftover batch or fallback, not imaginary portions.
+- Unresolved allergy/cross-contact requirement stays unresolved, including on Instacart product matches.
+- Missing API key: core planning still works, explain setup without attempting an unauthenticated call.
+- User approves list creation: send only approved ingredients and return a receipt/link, never say ordered.
+- Request an order: confirm exact cost, merchant, substitutions and delivery/account prerequisites before checkout.
+- No provider credentials, health details or personal records are packaged.
