@@ -42,7 +42,7 @@ def check_capabilities(package):
         try:
             current = json.loads(manifest.split('---', 2)[1])
             assert not any(k in current for k in ('packages', 'cronJobs', 'profiles', 'extensions'))
-            assert current['skills'] == [] and current['plugins'] == [] and current['automations'] == []
+            assert current.get('skills', []) == [] and current.get('plugins', []) == [] and current.get('automations', []) == []
             assert list(current['mcpServers']) == ['instacart']
         except (ValueError, KeyError, AssertionError):
             return ['meal-planner: unexpected current-format requirements']

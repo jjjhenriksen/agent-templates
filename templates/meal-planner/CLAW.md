@@ -43,9 +43,6 @@
       }
     ]
   },
-  "skills": [],
-  "plugins": [],
-  "automations": [],
   "mcpServers": {
     "instacart": {
       "command": "npx",

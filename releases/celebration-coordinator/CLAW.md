@@ -92,6 +92,154 @@
       {
         "source": "workspace/reference/providers.md",
         "path": "reference/providers.md"
+      },
+      {
+        "source": "workspace/skills/event-change-control/LICENSE",
+        "path": "skills/event-change-control/LICENSE"
+      },
+      {
+        "source": "workspace/skills/event-change-control/SKILL.md",
+        "path": "skills/event-change-control/SKILL.md"
+      },
+      {
+        "source": "workspace/skills/event-change-control/references/sources.md",
+        "path": "skills/event-change-control/references/sources.md"
+      },
+      {
+        "source": "workspace/skills/event-reminder-lifecycle/LICENSE",
+        "path": "skills/event-reminder-lifecycle/LICENSE"
+      },
+      {
+        "source": "workspace/skills/event-reminder-lifecycle/SKILL.md",
+        "path": "skills/event-reminder-lifecycle/SKILL.md"
+      },
+      {
+        "source": "workspace/skills/event-reminder-lifecycle/assets/example.json",
+        "path": "skills/event-reminder-lifecycle/assets/example.json"
+      },
+      {
+        "source": "workspace/skills/event-reminder-lifecycle/references/input.md",
+        "path": "skills/event-reminder-lifecycle/references/input.md"
+      },
+      {
+        "source": "workspace/skills/event-reminder-lifecycle/references/sources.md",
+        "path": "skills/event-reminder-lifecycle/references/sources.md"
+      },
+      {
+        "source": "workspace/skills/event-reminder-lifecycle/scripts/guard.py",
+        "path": "skills/event-reminder-lifecycle/scripts/guard.py"
+      },
+      {
+        "source": "workspace/skills/gift-season-manager/LICENSE",
+        "path": "skills/gift-season-manager/LICENSE"
+      },
+      {
+        "source": "workspace/skills/gift-season-manager/SKILL.md",
+        "path": "skills/gift-season-manager/SKILL.md"
+      },
+      {
+        "source": "workspace/skills/gift-season-manager/assets/example.json",
+        "path": "skills/gift-season-manager/assets/example.json"
+      },
+      {
+        "source": "workspace/skills/gift-season-manager/assets/gift-ledger.csv",
+        "path": "skills/gift-season-manager/assets/gift-ledger.csv"
+      },
+      {
+        "source": "workspace/skills/gift-season-manager/references/input.md",
+        "path": "skills/gift-season-manager/references/input.md"
+      },
+      {
+        "source": "workspace/skills/gift-season-manager/references/sources.md",
+        "path": "skills/gift-season-manager/references/sources.md"
+      },
+      {
+        "source": "workspace/skills/gift-season-manager/scripts/budget.py",
+        "path": "skills/gift-season-manager/scripts/budget.py"
+      },
+      {
+        "source": "workspace/skills/hosting-run-of-show/LICENSE",
+        "path": "skills/hosting-run-of-show/LICENSE"
+      },
+      {
+        "source": "workspace/skills/hosting-run-of-show/SKILL.md",
+        "path": "skills/hosting-run-of-show/SKILL.md"
+      },
+      {
+        "source": "workspace/skills/hosting-run-of-show/assets/run-of-show.md",
+        "path": "skills/hosting-run-of-show/assets/run-of-show.md"
+      },
+      {
+        "source": "workspace/skills/hosting-run-of-show/references/event-recipes.md",
+        "path": "skills/hosting-run-of-show/references/event-recipes.md"
+      },
+      {
+        "source": "workspace/skills/hosting-run-of-show/references/sources.md",
+        "path": "skills/hosting-run-of-show/references/sources.md"
+      },
+      {
+        "source": "workspace/skills/menu-prep-planner/LICENSE",
+        "path": "skills/menu-prep-planner/LICENSE"
+      },
+      {
+        "source": "workspace/skills/menu-prep-planner/SKILL.md",
+        "path": "skills/menu-prep-planner/SKILL.md"
+      },
+      {
+        "source": "workspace/skills/menu-prep-planner/assets/example.json",
+        "path": "skills/menu-prep-planner/assets/example.json"
+      },
+      {
+        "source": "workspace/skills/menu-prep-planner/references/food-safety.md",
+        "path": "skills/menu-prep-planner/references/food-safety.md"
+      },
+      {
+        "source": "workspace/skills/menu-prep-planner/references/input.md",
+        "path": "skills/menu-prep-planner/references/input.md"
+      },
+      {
+        "source": "workspace/skills/menu-prep-planner/references/sources.md",
+        "path": "skills/menu-prep-planner/references/sources.md"
+      },
+      {
+        "source": "workspace/skills/menu-prep-planner/scripts/menu.py",
+        "path": "skills/menu-prep-planner/scripts/menu.py"
+      },
+      {
+        "source": "workspace/skills/potluck-signup-coordinator/LICENSE",
+        "path": "skills/potluck-signup-coordinator/LICENSE"
+      },
+      {
+        "source": "workspace/skills/potluck-signup-coordinator/SKILL.md",
+        "path": "skills/potluck-signup-coordinator/SKILL.md"
+      },
+      {
+        "source": "workspace/skills/potluck-signup-coordinator/assets/example.json",
+        "path": "skills/potluck-signup-coordinator/assets/example.json"
+      },
+      {
+        "source": "workspace/skills/potluck-signup-coordinator/assets/signup.csv",
+        "path": "skills/potluck-signup-coordinator/assets/signup.csv"
+      },
+      {
+        "source": "workspace/skills/potluck-signup-coordinator/references/google-sheets.md",
+        "path": "skills/potluck-signup-coordinator/references/google-sheets.md"
+      },
+      {
+        "source": "workspace/skills/potluck-signup-coordinator/references/input.md",
+        "path": "skills/potluck-signup-coordinator/references/input.md"
+      },
+      {
+        "source": "workspace/skills/potluck-signup-coordinator/references/signupgenius.md",
+        "path": "skills/potluck-signup-coordinator/references/signupgenius.md"
+      },
+      {
+        "source": "workspace/skills/potluck-signup-coordinator/references/sources.md",
+        "path": "skills/potluck-signup-coordinator/references/sources.md"
+      },
+      {
+        "source": "workspace/skills/potluck-signup-coordinator/scripts/reconcile.py",
+        "path": "skills/potluck-signup-coordinator/scripts/reconcile.py"
       }
     ]
   },
@@ -115,40 +263,7 @@
         ]
       }
     }
-  },
-  "skills": [
-    {
-      "ref": "hosting-run-of-show",
-      "version": "0.1.0"
-    },
-    {
-      "ref": "menu-prep-planner",
-      "version": "0.1.0"
-    },
-    {
-      "ref": "potluck-signup-coordinator",
-      "version": "0.1.0"
-    },
-    {
-      "ref": "gift-season-manager",
-      "version": "0.1.0"
-    },
-    {
-      "ref": "event-change-control",
-      "version": "0.1.0"
-    },
-    {
-      "ref": "event-reminder-lifecycle",
-      "version": "0.1.0"
-    }
-  ],
-  "plugins": [
-    {
-      "ref": "openclaw-christmas-themes",
-      "version": "0.1.0"
-    }
-  ],
-  "automations": []
+  }
 }
 ---
 
@@ -162,8 +277,8 @@ Use AGENTS.md and the bundled workflows and records. Keep gift surprises and acc
 
 Read reference/voice.md to calibrate tone and reference/workflow.md for the job. Examples show the voice; they are not scripts to repeat.
 
-For hosting, menus, shared signups, gifts, changes and finite reminders, read reference/hosting-skills.md and load only the matching installed skill. Google Sheets is the default shared signup option. Christmas appearance plugins may accompany the template but do not select or change event workflows.
+For hosting, menus, shared signups, gifts, changes and finite reminders, read reference/hosting-skills.md and load only the matching bundled skill. Google Sheets is the default shared signup option. Christmas appearance plugins may accompany the template but do not select or change event workflows.
 
-The Christmas Themes plugin is included as an exact optional-at-review appearance requirement. It provides five light/dark theme choices, not event behavior. Do not switch the host appearance without the user choosing a theme; install only through normal Add review and trust consent.
+The Christmas Themes plugin is included as an exact native-profile appearance requirement. It provides five light/dark theme choices, not event behavior. Do not switch the host appearance without the user choosing a theme; install only through normal Add review and trust consent.
 
 Read reference/providers.md before using the declared Instacart MCP. It creates optional external recipe/shopping-list pages only; no provider setup or calls occur on first conversation.

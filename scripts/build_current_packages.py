@@ -16,6 +16,8 @@ def build(p):
     if set(sources)!=actual or len(sources)!=len(set(sources)):raise ValueError('asset coverage mismatch')
     names=set(sources)|{'package.json','CLAW.md','LICENSE','BOOTSTRAP.md','README.md'}
     names.update(n for n in ['SOURCES.md','ACCEPTANCE.md'] if (p/n).is_file())
+    names.update(f.relative_to(p).as_posix() for f in (p/'profiles').glob('*.yml'))
+    if (p/'bundled-skills.lock.json').exists():names.add('bundled-skills.lock.json')
     buf=io.BytesIO()
     with tarfile.open(fileobj=buf,mode='w',format=tarfile.USTAR_FORMAT) as t:
         for n in sorted(names):

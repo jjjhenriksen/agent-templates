@@ -1,25 +1,18 @@
-# Current-format release verification — 2026-11-10
+# Meal and theme release verification — 2026-11-10
 
-## Why 0.3.1 cannot be added
-ClawHub's deployed consumer (`templateRoutes-DIP48itg.js`, inspected on this date) explicitly rejects `packages`, `profiles`, `extensions`, and `cronJobs`. It requires portable dependencies as `skills`/`plugins` and jobs as `automations`. The installed OpenClaw 2026.11.1 CLI and ClawHub 0.25.1 CLI still validate the old shape. OpenClaw's online Template docs also describe the old dependencies/profile contract. Therefore a clean registry scan plus those old local checks was insufficient evidence of Add compatibility.
+## Observed compatibility split
+ClawHub's deployed page parser (templateRoutes-DIP48itg.js) rejects CLAW.md packages/cronJobs and accepts skills/plugins. The current publisher API and CLI 0.25.1 reject skills/plugins. The installed OpenClaw 2026.11.1 CLI accepts the old format. Both rejected publish requests returned HTTP 400 with no accepted attempt; receipts were retained. No accepted version was overwritten. A clean scan alone did not establish Add compatibility for 0.3.1.
 
-## Sources and scope
-- `releases/celebration-coordinator`: current 0.3.2 source; six published skill requirements, `openclaw-christmas-themes@0.1.0`, Instacart Developer Platform MCP.
-- `templates/meal-planner`: everyday meal planning, no holiday or event dependencies, Instacart MCP and optional offline shopping helper.
-- `templates/celebration-coordinator`: preserved 0.3.0 bundled review edition with its original tests. Not the current registry projection.
+## Compatible source
+Celebration 0.3.2 bundles the six locked hosting/gift skills as ordinary mapped workspace files, omits the conflicting dependency/job fields, declares the pinned Christmas Themes plugin through documented profiles/openclaw.yml, and declares Instacart MCP. Everyday Meal Planner has no holiday or skill dependency and the same Instacart MCP. Empty job declarations are omitted; neither package creates automations.
 
-Instacart uses official production endpoint with a pinned third-party `mcp-remote@0.16.5` stdio adapter, an unresolved API-key reference, and a two-tool allowlist. No credentials, accounts, live connections, shopping pages or checkout were used to test these packages. No host config or installed agents changed.
+This uses the native-profile mechanism documented in https://docs.openclaw.ai/clawhub/templates and https://docs.openclaw.ai/cli/templates . The live page parser can read the exact CLAW.md, and the old host/publisher can inspect the conventional profile. It does not silently convert an accepted published archive. The older bundled review edition remains reproducible at templates/celebration-coordinator.
 
-## Repeatable checks
-- `python3 -m unittest discover -s tests -v`
-- `python3 scripts/check_repo.py`
-- `python3 scripts/build_current_packages.py --out <new-output-directory>` checks asset coverage, path confinement and byte-identical rebuilds. Archives contain the exact current-format CLAW.md, not an old-format compatibility projection.
-- Validate source and archive CLAW.md with the deployed ClawHub parser's exported parser (the `o` export of the observed bundle). Old 0.3.1 returns null; both new manifests return a non-null parsed manifest. The live bundle imports are fetched read-only without modifying installed tools.
+## Checks
+Run python3 -m unittest discover -s tests -v and python3 scripts/check_repo.py. Build immutable, byte-reproducible archives with python3 scripts/build_current_packages.py --out a-new-directory. Current source projects must also pass installed OpenClaw validate, dev and non-installing add preview. Validate source and exact archive CLAW.md with the deployed page parser. Record actual outcomes separately from manual scenarios.
 
-## Unverified boundaries
-Parsing is not a successful end-to-end Add. Receiving-host setup, executable trust/capability consent, MCP authentication, live tool schemas, theme rendering and conversation quality require separate host tests. Instacart needs an operator-provided Developer Platform key. The old authoring/publishing CLI rejects the new valid keys, so it cannot substantiate current-contract Add or release readiness. Never reconvert the published manifest to the old shape to get a green local check. Publication/registry visibility and artifact digest must be verified separately and receipts retained before retries.
+## Boundaries
+No live Add, MCP authentication/tool discovery, grocery page creation, theme rendering, or model/host pilot was performed. Instacart requires an operator-supplied Developer Platform API key. The declared bridge is third-party mcp-remote 0.16.5, not Instacart-authored, and restricts tools to create-recipe/create-shopping-list. It creates external pages, not guaranteed carts, orders or delivery. Secrets remain unresolved references; no account or host configuration changed. Kroger's full API contracts and any official Kroger-owned MCP were not verified. Registry visibility and digest require separate receipts.
 
-Kroger's official API site was reached but its full JS-rendered contract and any official Kroger-owned MCP were not verified. Instacart's official MCP tutorial explicitly documents recipe/list page tools and API-key authentication; its separate OAuth deployment has representative-managed access.
-
-## Recorded results
-152 Python tests passed; repository hygiene, local links and Python/JSON syntax passed. Both current-format archives rebuilt byte-identically. Deployed consumer parser rejects 0.3.1 and accepts both replacement manifests. Live Add, MCP and theme-rendering tests remain unrun.
+## Recorded checks
+152 tests passed; repository hygiene and whitespace checks passed. Both source projects validate with the installed CLI and both CLAW.md files pass the deployed page parser. Exact archive publisher dry-runs pass. Meal Planner Add preview has zero blockers (one MCP capability escalation). Celebration Add preview reaches dependency planning but is blocked on this host because Christmas Themes is not in the plugin allowlist; no policy was changed. Its offline dev preview cannot preflight that registry extension. These are not manifest syntax failures or evidence of a live Add. Both archives rebuild byte-identically.

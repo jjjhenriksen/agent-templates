@@ -42,11 +42,14 @@ class MealTests(unittest.TestCase):
 class CurrentManifestTests(unittest.TestCase):
     def test_current_contract_and_mappings(self):
         for p in [P,R/'releases/celebration-coordinator']:
-            text=(p/'CLAW.md').read_text();a=json.loads(text.split('---',2)[1]);self.assertFalse(set(a)&{'packages','cronJobs','profiles','extensions'});self.assertEqual(a['automations'],[])
+            text=(p/'CLAW.md').read_text();a=json.loads(text.split('---',2)[1]);self.assertFalse(set(a)&{'packages','cronJobs','profiles','extensions'});self.assertEqual(a.get('automations',[]),[])
             declared=[v['source'] for v in a['workspace']['bootstrapFiles'].values()]+[v['source'] for v in a['workspace']['files']]
             actual={f.relative_to(p).as_posix() for f in (p/'workspace').rglob('*') if f.is_file() and '__pycache__' not in f.parts};self.assertEqual(set(declared),actual);self.assertEqual(len(declared),len(set(declared)))
             c=a['mcpServers']['instacart'];self.assertIn('mcp-remote@0.16.5',c['args']);self.assertEqual(c['env'],{'INSTACART_API_KEY':'${INSTACART_API_KEY}'});self.assertEqual(c['toolFilter']['include'],['create-recipe','create-shopping-list'])
-            self.assertFalse((p/'profiles').exists())
+            self.assertEqual((p/'profiles').exists(),p.name=='celebration-coordinator')
     def test_themes_only_on_celebration(self):
-        a=json.loads((R/'releases/celebration-coordinator/CLAW.md').read_text().split('---',2)[1]);b=json.loads((P/'CLAW.md').read_text().split('---',2)[1]);self.assertEqual(a['plugins'],[{'ref':'openclaw-christmas-themes','version':'0.1.0'}]);self.assertEqual(len(a['skills']),6);self.assertEqual(b['plugins'],[])
+        p=R/'releases/celebration-coordinator'
+        self.assertIn('ref: openclaw-christmas-themes', (p/'profiles/openclaw.yml').read_text())
+        self.assertEqual(len(list((p/'workspace/skills').glob('*/SKILL.md'))),6)
+        self.assertFalse((P/'profiles').exists())
 if __name__=='__main__': unittest.main()

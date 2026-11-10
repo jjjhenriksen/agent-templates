@@ -1,0 +1,9 @@
+schemaVersion: 1
+agent: {}
+extensions:
+  - id: christmas-themes
+    kind: plugin
+    format: openclaw
+    source: clawhub
+    ref: openclaw-christmas-themes
+    version: 0.1.0
