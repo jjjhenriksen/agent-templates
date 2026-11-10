@@ -38,6 +38,15 @@ extensions:
 def check_capabilities(package):
     """Pin reviewed capability surfaces; reject accidental widening."""
     manifest = (package / 'CLAW.md').read_text()
+    if package.name == 'meal-planner':
+        try:
+            current = json.loads(manifest.split('---', 2)[1])
+            assert not any(k in current for k in ('packages', 'cronJobs', 'profiles', 'extensions'))
+            assert current['skills'] == [] and current['plugins'] == [] and current['automations'] == []
+            assert list(current['mcpServers']) == ['instacart']
+        except (ValueError, KeyError, AssertionError):
+            return ['meal-planner: unexpected current-format requirements']
+        return []
     expected = TRAVEL_PACKAGES if package.name == 'travel-copilot' else 'packages: []'
     blocks = re.findall(r'^packages:[^\n]*(?:\n[ \t]+[^\n]*)*', manifest, re.M)
     errors = []
@@ -59,6 +68,9 @@ def check(root=ROOT):
         if meta.get('scripts') or meta['openclaw'] != {'template': 'CLAW.md'}:
             errors.append(str(package) + ': unsafe metadata')
         sources = re.findall(r'^\s+(?:- )?source: (workspace/\S+)$', manifest, re.M)
+        if package.name == 'meal-planner':
+            current = json.loads(manifest.split('---', 2)[1])
+            sources = [v['source'] for v in current['workspace']['bootstrapFiles'].values()] + [v['source'] for v in current['workspace']['files']]
         actual = {p.relative_to(package).as_posix() for p in (package / 'workspace').rglob('*') if p.is_file() and '__pycache__' not in p.parts}
         if set(sources) != actual or len(sources) != len(set(sources)):
             errors.append(package.name + ': asset coverage mismatch')

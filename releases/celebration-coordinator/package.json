@@ -1,0 +1,15 @@
+{
+  "name": "@jjjhenriksen/celebration-coordinator",
+  "version": "0.3.2",
+  "type": "module",
+  "description": "Plan dinners, parties, potlucks and gifts with practical hosting workflows and private records.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jjjhenriksen/agent-templates.git",
+    "directory": "releases/celebration-coordinator"
+  },
+  "openclaw": {
+    "template": "CLAW.md"
+  }
+}

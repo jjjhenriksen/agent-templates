@@ -1,0 +1,33 @@
+{
+  "fictional": true,
+  "ingredients": [
+    {
+      "id": "rice-dry",
+      "unit": "g",
+      "need": "300"
+    },
+    {
+      "id": "rice-dry",
+      "unit": "g",
+      "need": "200"
+    },
+    {
+      "id": "tomato",
+      "unit": "each",
+      "need": "4"
+    },
+    {
+      "id": "herbs",
+      "unit": "bunch",
+      "need": null
+    }
+  ],
+  "pantry": [
+    {
+      "id": "rice-dry",
+      "unit": "g",
+      "available": "400",
+      "reserved": "100"
+    }
+  ]
+}
