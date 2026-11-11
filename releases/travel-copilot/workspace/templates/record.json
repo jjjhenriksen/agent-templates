@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "id": "new-plan",
+  "title": "",
+  "timezone": "",
+  "public_summary": {},
+  "approved_public_fields": [],
+  "currency": "",
+  "budget": null,
+  "costs": [],
+  "constraints": [],
+  "itinerary": [],
+  "evidence": [],
+  "origin": null,
+  "date_window": null,
+  "party": null,
+  "normal_plan": [],
+  "lower_capacity_plan": [],
+  "skip_first": [],
+  "packing": [],
+  "reservations": [],
+  "disruption_options": []
+}

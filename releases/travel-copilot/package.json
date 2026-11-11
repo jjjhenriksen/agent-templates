@@ -1,0 +1,9 @@
+{
+  "name": "@jjjhenriksen/travel-copilot",
+  "version": "0.2.5",
+  "type": "module",
+  "license": "MIT",
+  "openclaw": {
+    "template": "CLAW.md"
+  }
+}
