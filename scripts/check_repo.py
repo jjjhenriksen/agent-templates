@@ -38,6 +38,12 @@ extensions:
 def check_capabilities(package):
     """Pin reviewed capability surfaces; reject accidental widening."""
     manifest = (package / 'CLAW.md').read_text()
+    if package.name == 'schoolwork-copilot':
+        expected = 'skills:\n  - ref: canvas-lms-navigation\n    version: 0.1.0\n  - ref: coursework-research-drafting\n    version: 0.1.0\n  - ref: coursework-technical-verification\n    version: 0.1.0'
+        blocks = re.findall(r'^skills:[^\n]*(?:\n[ \t]+[^\n]*)*', manifest, re.M)
+        forbidden = re.search(r'^(?:packages|plugins|cronJobs|automations):', manifest, re.M)
+        profiles = list((package / 'profiles').glob('*'))
+        return [] if blocks == [expected] and not forbidden and not profiles and manifest.count('mcpServers: {}') == 1 else [package.name + ': unexpected dependencies/jobs']
     expected = TRAVEL_PACKAGES if package.name == 'travel-copilot' else 'packages: []'
     blocks = re.findall(r'^packages:[^\n]*(?:\n[ \t]+[^\n]*)*', manifest, re.M)
     errors = []
