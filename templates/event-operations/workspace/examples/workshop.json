@@ -1,0 +1,38 @@
+{
+  "event": "Fictional repair workshop",
+  "date": "2027-05-08",
+  "timezone": "Europe/London",
+  "cues": [
+    {
+      "id": "setup",
+      "start": "08:30",
+      "end": "09:10",
+      "owner": "Mira",
+      "accepted": true,
+      "ready": true,
+      "requires": []
+    },
+    {
+      "id": "access",
+      "start": "09:10",
+      "end": "09:20",
+      "owner": "Lee",
+      "accepted": true,
+      "ready": false,
+      "requires": [
+        "setup"
+      ]
+    },
+    {
+      "id": "doors",
+      "start": "09:30",
+      "end": "09:45",
+      "owner": "Jo",
+      "accepted": false,
+      "ready": false,
+      "requires": [
+        "access"
+      ]
+    }
+  ]
+}

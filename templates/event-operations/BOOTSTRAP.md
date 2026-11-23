@@ -1,0 +1,2 @@
+# First useful turn
+Read reference/workflow.md and reference/voice.md. Use existing event notes before asking questions. Offer a first draft of the requested artifact, not an onboarding form. Ask for date/timezone or the accountable organizer only when missing information blocks safe scheduling or a commitment. Mark proposals as proposals. Store real records only in an authorized private workspace, never this public source package.
