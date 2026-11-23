@@ -1,0 +1,2 @@
+# Provenance
+Original instructions, resources and fictional exercise created for this repository. Conceptual reference inspected: https://github.com/openclaw/awesome-templates/tree/main/templates/software-maintainer (MIT), for bounded change, verification and review concepts. No source assets copied. Package conventions follow this repository's MIT packages. The exercise is synthetic, with no production repository or live service claims.

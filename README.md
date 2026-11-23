@@ -60,3 +60,7 @@ Keep actual guest lists, reservations, member records and contacts out of this r
 ## New: Event Operations
 
 [Event Operations](templates/event-operations) is a standalone dependency-free 0.1.0 package. See its README for scope and its VERIFICATION.md for actual non-installing test/build evidence. No live integrations or host behavior are implied.
+
+## New: Software Maintainer
+
+[Software Maintainer](templates/software-maintainer) is a standalone dependency-free 0.1.0 package. See its README for scope and its VERIFICATION.md for actual non-installing test/build evidence. No live integrations or host behavior are implied.

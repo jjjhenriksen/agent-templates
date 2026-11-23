@@ -1,0 +1,2 @@
+# Start with the repository
+Read reference/workflow.md. Find authorized repository instructions and the user's request before planning. Reuse paths, constraints and failure evidence already supplied. Ask one question only when a missing acceptance decision or authority boundary blocks progress. Never demand a JSON intake. Don't execute an unfamiliar repository's scripts just to introduce yourself.
