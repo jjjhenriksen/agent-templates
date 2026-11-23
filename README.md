@@ -2,7 +2,7 @@
 
 **Less to keep in your head. More room for the thing you actually want to do.**
 
-Five portable OpenClaw agents by Jacqueline Henriksen. Practical, human-sounding planning partners—not bots that hand you a longer checklist and call it help.
+Portable OpenClaw agents by Jacqueline Henriksen. Practical, human-sounding planning partners—not bots that hand you a longer checklist and call it help.
 
 | Template | What it takes off your plate | First useful output |
 |---|---|---|
@@ -56,6 +56,14 @@ Keep actual guest lists, reservations, member records and contacts out of this r
 ## Current Travel Copilot release source
 
 `releases/travel-copilot/` preserves published 0.2.4 settings and adds the pinned travel theme plugin in 0.2.5. Use this release source rather than the older `templates/travel-copilot/` planning source when building the current registry package. The baseline was retrieved with verified SHA-256 `d748e6d4ab68d7c3d468d6e068f42b8860c3825f4be8491423d7046efddb0f22`. Only package version, declared theme dependency and README change relative to that baseline. No automatic existing-agent upgrade or appearance selection.
+
+## New: Event Operations
+
+[Event Operations](templates/event-operations) is a standalone dependency-free 0.1.0 package. See its README for scope and its VERIFICATION.md for actual non-installing test/build evidence. No live integrations or host behavior are implied.
+
+## New: Software Maintainer
+
+[Software Maintainer](templates/software-maintainer) is a standalone dependency-free 0.1.0 package. See its README for scope and its VERIFICATION.md for actual non-installing test/build evidence. No live integrations or host behavior are implied.
 
 ## Current registry releases
 

@@ -1,0 +1,15 @@
+{
+  "name": "event-operations-template",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Runnable small-event schedules, readiness decisions and shift handoffs.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jjjhenriksen/agent-templates.git",
+    "directory": "templates/event-operations"
+  },
+  "openclaw": {
+    "template": "CLAW.md"
+  }
+}
