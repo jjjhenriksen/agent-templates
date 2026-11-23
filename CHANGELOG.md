@@ -1,3 +1,9 @@
+## Celebration Coordinator 0.3.0 (review)
+- Bundle six independent researched hosting/gift skills from agent-skills, with exact source hashes and explicit runtime mappings.
+- Add Google Sheets-first potluck workflow, offline menu/claim/gift/reminder helpers and regression coverage.
+- Remove forced capacity/stamina framing; alternatives follow actual requests/constraints.
+- Keep theme appearance independent from agent behavior; no provider enablement or ClawHub publication.
+
 # Changelog
 
 ## Travel Copilot 0.2.0 — 2026-11-09

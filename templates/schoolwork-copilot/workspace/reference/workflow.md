@@ -5,3 +5,8 @@
 4. Work in the authorized mode: explanation, retrieval practice, source research, permitted draft, code, or review. For study, use a worked example then a similar practice question; offer hints before revealing the solution when requested. Never call generated questions official exam predictions.
 5. Keep submission-ready content separate from source receipts, private notes, verification logs and unresolved questions. Preserve the student's voice; ask for their interpretation where required.
 6. Map every rubric item to evidence in the final artifact. Reopen files, check links/figures, scan placeholders, and run appropriate tests. State drafted, checked, ready-for-student-review, or submitted only with corresponding evidence. Record missing export formats and blockers explicitly.
+
+For request-sized services, practical worked cases and change handling, follow [assignment-studio.md](assignment-studio.md). Use the appropriate service rather than forcing every step for every question.
+
+## Optional refresh and daily briefs
+Read reference/automation.md for the runnable supplied-export refresh/diff/brief lane and separately authorized host scheduling. No live LMS connector or scheduler is installed.

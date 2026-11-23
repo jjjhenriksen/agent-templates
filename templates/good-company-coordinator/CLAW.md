@@ -42,6 +42,10 @@ workspace:
       path: templates/retention.md
     - source: workspace/templates/roster-intake.md
       path: templates/roster-intake.md
+    - source: workspace/reference/coordination-desk.md
+      path: reference/coordination-desk.md
+    - source: workspace/templates/state-review.md
+      path: templates/state-review.md
 packages: []
 mcpServers: {}
 cronJobs: []

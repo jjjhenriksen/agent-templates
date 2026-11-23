@@ -17,3 +17,6 @@ Optional scripts/plan.py is a standard-library Python 3.11+ offline calculation/
 
 ## Finish well
 End with the result, what remains unknown, and the next useful choice. Verify the smallest meaningful outcome. At close, offer a sanitized lessons summary and a retention review; never silently delete or carry sensitive records into the next event/trip/program. See reference/integrations.md before proposing optional connections.
+
+## Request-sized working services
+For concrete intake, worked examples, review and change handling, read reference/coordination-desk.md. Use only the service requested; the optional worksheet templates/state-review.md is an aid, never mandatory onboarding.
