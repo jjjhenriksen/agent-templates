@@ -53,6 +53,10 @@ See the individual voice guides for full fictional exchanges.
 
 Keep actual guest lists, reservations, member records and contacts out of this repository. “Local-first” storage does not mean local inference, and prompt instructions aren't access controls. GitHub hosting is not ClawHub registry publication; neither installs an agent for you.
 
+## Current Travel Copilot release source
+
+`releases/travel-copilot/` preserves published 0.2.4 settings and adds the pinned travel theme plugin in 0.2.5. Use this release source rather than the older `templates/travel-copilot/` planning source when building the current registry package. The baseline was retrieved with verified SHA-256 `d748e6d4ab68d7c3d468d6e068f42b8860c3825f4be8491423d7046efddb0f22`. Only package version, declared theme dependency and README change relative to that baseline. No automatic existing-agent upgrade or appearance selection.
+
 ## Current registry releases
 
 [Celebration Coordinator 0.3.2](releases/celebration-coordinator) migrates the manifest and declares Christmas Themes plus Instacart MCP. [Everyday Meal Planner](templates/meal-planner) plans ordinary weeks, pantry-first shopping, prep and leftovers, with optional Instacart MCP. Neither source connects an account or orders groceries. See [current release validation](docs/MEAL-THEMES-VERIFICATION.md). Older bundled review editions and their historical tests are retained, not silently treated as current registry artifacts.

@@ -1,6 +1,6 @@
 {
   "name": "schoolwork-copilot-template",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "type": "module",
   "description": "Rubric-grounded coursework, study support, and realistic assignment planning.",
   "license": "MIT",

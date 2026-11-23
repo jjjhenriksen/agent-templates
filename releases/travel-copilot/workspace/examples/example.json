@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "example-trip",
+  "title": "Two-night city break (fictional)",
+  "timezone": "Europe/London",
+  "currency": "GBP",
+  "budget": "700",
+  "costs": [
+    {
+      "id": "rail",
+      "currency": "GBP",
+      "unit": "per_person",
+      "quantity": 2,
+      "amount": "80"
+    },
+    {
+      "id": "lodging",
+      "currency": "GBP",
+      "unit": "party",
+      "quantity": 1,
+      "amount": "300"
+    },
+    {
+      "id": "meals",
+      "currency": "GBP",
+      "unit": "party",
+      "quantity": 1,
+      "amount": null
+    }
+  ],
+  "constraints": [
+    {
+      "id": "step-free-room",
+      "hard": true,
+      "status": "unknown",
+      "evidence": null
+    }
+  ],
+  "itinerary": [
+    {
+      "day": "2030-02-12",
+      "normal": "Arrive, check in, optional short outing",
+      "lower_capacity": "Arrive and check in; skip outing"
+    }
+  ],
+  "evidence": [],
+  "public_summary": {
+    "title": "City break",
+    "dates": "2030-02-12 to 2030-02-14",
+    "itinerary": [
+      "Arrival day kept light"
+    ]
+  },
+  "approved_public_fields": [
+    "title",
+    "dates"
+  ],
+  "private_notes": {
+    "booking_locator": "FICTIONAL-DO-NOT-SHARE"
+  }
+}
