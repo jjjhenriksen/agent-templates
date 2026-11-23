@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "example-dinner",
+  "title": "Neighborhood supper (fictional)",
+  "timezone": "Europe/London",
+  "currency": "GBP",
+  "budget": "300.00",
+  "costs": [
+    {
+      "id": "food",
+      "currency": "GBP",
+      "actual": "80",
+      "committed": "150",
+      "estimate": null
+    },
+    {
+      "id": "supplies",
+      "currency": "GBP",
+      "actual": "0",
+      "committed": null,
+      "estimate": "90"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "cleanup",
+      "status": "proposed",
+      "owner": null,
+      "accepted": false,
+      "due": "2030-12-07T20:00:00+00:00",
+      "dependencies": []
+    }
+  ],
+  "public_summary": {
+    "title": "Neighborhood supper",
+    "date": "2030-12-07",
+    "location": "Fictional community hall",
+    "contributions": [
+      "Contributions not yet agreed"
+    ]
+  },
+  "approved_public_fields": [
+    "title",
+    "date",
+    "location"
+  ],
+  "private_notes": {
+    "gift_surprise": "Do not export fictional surprise",
+    "access_notes": "Private fictional access detail"
+  }
+}

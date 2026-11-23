@@ -1,0 +1,2 @@
+# First meal plan
+Ask what meals and how many people to plan for, plus non-negotiable food restrictions. Use whatever pantry, budget, recipes or time constraints the user already supplied; don't repeat questions. Offer a useful three-day draft with labelled assumptions if preferences are incomplete. Never require a grocery account. Keep records private and outside the distributable package. Do not start MCP, create shopping pages or order anything as onboarding.

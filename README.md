@@ -64,3 +64,7 @@ Keep actual guest lists, reservations, member records and contacts out of this r
 ## New: Software Maintainer
 
 [Software Maintainer](templates/software-maintainer) is a standalone dependency-free 0.1.0 package. See its README for scope and its VERIFICATION.md for actual non-installing test/build evidence. No live integrations or host behavior are implied.
+
+## Current registry releases
+
+[Celebration Coordinator 0.3.2](releases/celebration-coordinator) migrates the manifest and declares Christmas Themes plus Instacart MCP. [Everyday Meal Planner](templates/meal-planner) plans ordinary weeks, pantry-first shopping, prep and leftovers, with optional Instacart MCP. Neither source connects an account or orders groceries. See [current release validation](docs/MEAL-THEMES-VERIFICATION.md). Older bundled review editions and their historical tests are retained, not silently treated as current registry artifacts.
