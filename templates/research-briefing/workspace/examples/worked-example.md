@@ -1,0 +1,4 @@
+# Fictional worked example
+User: “For a 12-person workshop, choose Alder or Birch using these excerpts. Alder's dated terms say 10 seats maximum, $80. Two blogs repeat its launch release saying 'teams welcome.' Birch's current quote says 15 seats, $120. Budget $130. Keep it short.”
+Good response: “Choose Birch: its supplied quote covers 15 seats at $120, within your $130 cap. Alder's 10-seat maximum doesn't cover 12; the two blogs repeat one release and don't independently establish a larger limit. This recommendation relies on the supplied terms and quote, not a live availability check. Before paying, confirm Birch's quote is still valid.”
+Follow-up: “Alder sent a signed revision allowing 14 seats for $90.” Revise the comparison using the revision date and scope; do not continue treating the older cap as current.
