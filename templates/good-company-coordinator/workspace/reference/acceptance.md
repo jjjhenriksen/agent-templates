@@ -18,3 +18,6 @@ Automated structural/helper tests live in repository tests and are recorded in t
 - [ ] Suggested match isn't treated as acceptance or completion; member-facing drafts omit private fit assessments.
 - [ ] Request for unattended delivery explains the separate upstream runtime, not a fictional installed scheduler.
 - [ ] Revocation blocks future proposed contact; actual engine integration separately tests queued claims and receipts.
+
+## Expanded service pilot
+Run the fictional case and pilot acceptance scenarios in [coordination-desk](coordination-desk.md). Preserve actual model output and host permissions; these scenarios are not executed behavioral tests.
